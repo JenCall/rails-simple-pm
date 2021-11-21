@@ -3,4 +3,14 @@
 <%= render 'form', project: @project %>
 
 <%= link_to 'Show', @project %> |
-<%= link_to 'Back', projects_path %>
+
+<%= link_to 'Back', @project, class: "btn btn-secondary mb-3" %>
+<div class="card">
+  <div class="card-body">
+    <h2 class="card-title mb-4">
+      <span>New Project</span>
+    </h2>
+
+      <%= render 'form', project: @project %>
+  </div>
+</div>
