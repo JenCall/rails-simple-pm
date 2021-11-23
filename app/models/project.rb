@@ -8,6 +8,10 @@ class Project < ApplicationRecord
 
   def status
     if tasks.all? { |task| task.complete? }
+      'complete'
+    elsif tasks.any? { |task| task.in_progress? }
+      'in_progress'
+    else 'not_started'
   end
 
 end
