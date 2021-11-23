@@ -7,7 +7,7 @@ class Project < ApplicationRecord
   end
 
   def status
-
+    if tasks.all? { |task| task.complete? }
   end
 
 end
