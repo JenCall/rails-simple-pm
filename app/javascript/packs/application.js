@@ -20,5 +20,6 @@ import "../stylesheets/application"
 // const imagePath = (name) => images(name, true)
 
 document.addEventListener('turbolinks:load', () => {
-  console.log("Sortable", Sortable)
+  var el = document.getElementById('tasks-list');
+  var sortable = Sortable.create(el);
 })
