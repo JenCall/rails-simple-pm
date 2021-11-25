@@ -23,6 +23,6 @@ document.addEventListener('turbolinks:load', () => {
   var el = document.getElementById('tasks-list');
   var sortable = Sortable.create(el, {
     animation: 150,
-    ghostClass: 'sortable-ghost'
+    ghostClass: 'blue-background-class'
   });
 })
