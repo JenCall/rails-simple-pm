@@ -52,9 +52,9 @@
                       <%= task.readable_status %>
                     </button>
                     <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                      <a class="dropdown-item" href="#">Action</a>
-                      <a class="dropdown-item" href="#">Another action</a>
-                      <a class="dropdown-item" href="#">Something else here</a>
+                      <% Task::STATUS_OPTIONS.each do |status| %>
+                        <a class="dropdown-item" href="#"> <%= status[0] %> </a>
+                      <% end %>
                     </div>
                   </div>
                   <%= link_to 'Edit', edit_project_task_path(task.project, task), class: "btn btn-light text-success btn-sm" %>
