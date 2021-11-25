@@ -17,5 +17,8 @@
   .grip {
     font-size: 1.1rem;
     cursor: grab;
+    &:active {
+      cursor: grabbing;
+    }
   }
 }
